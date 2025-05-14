@@ -48,7 +48,7 @@ X-GNOME-Autostart-enabled=true
 EOF
 
 echo "== Installing Website Touch Kiosk Plymouth Theme =="
-mkdir -p /usr/share/plymouth/themes/website-kiosk
+sudo mkdir -p /usr/share/plymouth/themes/website-kiosk
 wget -O /tmp/website-kiosk.zip "https://github.com/loisdroug27/Raspberry/raw/main/Plymouth%20theme/website-kiosk-plymouth.zip"
 sudo unzip -o /tmp/website-kiosk.zip -d /usr/share/plymouth/themes/website-kiosk
 sudo plymouth-set-default-theme -R website-kiosk
